@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Practica03</string>
-    <string name="BotonSiguiente">Siguiente</string>
     <string name="tv1">Primer Activity</string>
-    <string name="BotonAnterior">Anterior</string>
     <string name="tv2">Segundo Activity</string>
+    <string name="tv3">Tercer Activity</string>
+    <string name="BotonSiguiente">Siguiente</string>
+    <string name="BotonAnterior">Anterior</string>
+
 </resources>
