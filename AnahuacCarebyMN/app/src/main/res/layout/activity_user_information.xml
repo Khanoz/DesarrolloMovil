@@ -6,23 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".UserInformation">
 
+
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="395dp"
-        android:layout_height="72dp"
+        android:id="@+id/Nombre"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/nombre"
         android:inputType="textPersonName"
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="395dp"
-        android:layout_height="72dp"
+        android:id="@+id/ApellidoP"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/apellidoP"
@@ -33,17 +34,58 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
-        android:layout_width="395dp"
-        android:layout_height="75dp"
+        android:id="@+id/ApellidoM"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:ems="10"
+        android:hint="@string/apellidoM"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/CPassword"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/contraseñaConfirmacion"
+        android:inputType="textPassword"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView2"
@@ -67,7 +109,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/Nombre" />
 
     <TextView
         android:id="@+id/textView5"
@@ -79,7 +121,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/ApellidoM" />
 
     <TextView
         android:id="@+id/textView6"
@@ -91,7 +133,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
 
     <TextView
         android:id="@+id/textView4"
@@ -103,34 +145,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="395dp"
-        android:layout_height="72dp"
-        android:ems="10"
-        android:hint="@string/apellidoM"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:textColorHint="#757575"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:ignore="DuplicateSpeakableTextCheck" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword3"
-        android:layout_width="395dp"
-        android:layout_height="72dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/contraseñaConfirmacion"
-        android:inputType="textPassword"
-        android:textColorHint="#757575"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/ApellidoP" />
 
     <TextView
         android:id="@+id/textView7"
@@ -142,20 +157,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="395dp"
-        android:layout_height="72dp"
-        android:autofillHints=""
-        android:ems="10"
-        android:hint="@string/contraseña"
-        android:inputType="textPassword"
-        android:textColorHint="#757575"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -177,10 +179,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.17"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+        app:layout_constraintTop_toBottomOf="@+id/CPassword" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/RegistrarCancelarBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
@@ -191,7 +193,7 @@
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/RegistrarContinuarBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -199,7 +201,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.242"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/RegistrarCancelarBtn"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
