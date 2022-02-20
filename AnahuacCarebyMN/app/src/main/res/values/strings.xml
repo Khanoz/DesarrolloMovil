@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Anahuac Care by M&amp;N</string>
+
+    <string name="txt_nuevo">¿Nuevo?</string>
+    <string name="noAcount">¿No tienes cuenta @anahuac.mx?</string>
+    <string name="email_user">Usuario</string>
+    <string name="password_user">Contraseña</string>
+    <string name="todo">TODO</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidoP">Apellido Paterno</string>
+    <string name="apellidoM">Apellido Materno</string>
+    <string name="email">Correo Electronico</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="contraseñaConfirmacion">Confirmar Contraseña</string>
+    <string name="Campus">Campus</string>
+    <string name="proveedor">Soy proveedor</string>
+    <string name="continuar">Continuar</string>
+    <string name="Bienvenida">Estimado(a) Gilberto: Como parte de los profeso para un sano retorno, te pedimos que respondas este cuestionario cada día que debas acudir presencialmente a la Universidad. Después de contestar, se generará un carnet que podrás presentar en la entrada de la Universidad.</string>
+
+    <string name="negritas">Resultado de cuestionario de vulnerabilidad:</string>
+    <string name="no_vulnerable">No soy vulnerable.</string>
+
+
+    <string name="Button1">Ingresa con mi cuenta Anáhuac</string>
+    <string name="Button2">Entra aqui</string>
+    <string name="btn_entrar">Entrar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_registrarAqui">Registrate aquí</string>
+    <string name="btn_resetPassword">Recupera tu contraseña</string>
+    <string name="btn_responderCuestionario">Responder Cuestionario Diario</string>
+
+
+</resources>
