@@ -10,12 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AnahuacCareByMN">
         <activity
-            android:name=".RecuperarContrasena"
-            android:exported="false" />
-        <activity
-            android:name=".Pregunta2"
-            android:exported="false" />
-        <activity
             android:name=".Pregunta1"
             android:exported="false" />
         <activity

@@ -12,10 +12,6 @@
     <string name="email">Correo Electronico</string>
     <string name="contraseña">Contraseña</string>
     <string name="contraseñaConfirmacion">Confirmar Contraseña</string>
-    <string name="contraseñaOlvidada">Contraseña Nueva</string>
-    <string name="contraseñaOlvidadaConfirmacion">Confirmar Contraseña Nueva</string>
-    <string name="Confirmar">Confirmar</string>
-    <string name="Cancelar">Cancelar</string>
     <string name="Campus">Campus</string>
     <string name="proveedor">Soy proveedor</string>
     <string name="continuar">Continuar</string>

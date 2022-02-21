@@ -3,14 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Miguel/Desktop/ACare/DesarrolloMovil/AnahuacCarebyMN/app/src/main/res/layout/activity_cuestionario.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Miguel/Desktop/ACare/DesarrolloMovil/AnahuacCarebyMN/app/src/main/res/layout/activity_login_in.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Miguel/Desktop/ACare/DesarrolloMovil/AnahuacCarebyMN/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Miguel/Desktop/ACare/DesarrolloMovil/AnahuacCarebyMN/app/src/main/res/layout/activity_pregunta1.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Miguel/Desktop/ACare/DesarrolloMovil/AnahuacCarebyMN/app/src/main/res/layout/activity_pregunta2.xml" value="0.25" />
-        <entry key="..\:/Users/Miguel/Desktop/ACare/DesarrolloMovil/AnahuacCarebyMN/app/src/main/res/layout/activity_recuperar_contrasena.xml" value="0.35260416666666666" />
-        <entry key="..\:/Users/Miguel/Desktop/ACare/DesarrolloMovil/AnahuacCarebyMN/app/src/main/res/layout/activity_user_information.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/Miguel/Desktop/ACare/DesarrolloMovil/AnahuacCarebyMN/app/src/main/res/layout/activity_user_informationOLD.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_cuestionario.xml" value="0.253125" />
         <entry key="app/src/main/res/layout/activity_login_in.xml" value="0.375" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2390625" />
