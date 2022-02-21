@@ -107,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/LoginCancelarBtn" />
 
     <Button
-        android:id="@+id/btn_reset"
+        android:id="@+id/LoginResetBtn"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

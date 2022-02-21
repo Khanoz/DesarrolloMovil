@@ -28,7 +28,8 @@ public class UserInformation extends AppCompatActivity {
         ContinuarButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Registrar();
+                if(PasswordsMatch())
+                    Registrar();
             }
         });
         CancelarButton = (Button) findViewById(R.id.RegistrarCancelarBtn);
@@ -39,12 +40,13 @@ public class UserInformation extends AppCompatActivity {
             }
         });
     }
-
     public void InitElements(){
         preferences = getSharedPreferences("datos", Context.MODE_PRIVATE);
         editor = preferences.edit();
     }
-
+    private boolean PasswordsMatch(){
+        return ((TextView) findViewById(R.id.Password)).getText().toString().equals(((TextView) findViewById(R.id.CPassword)).getText().toString());
+    }
     private void Registrar(){
         Set<String> setEP = new HashSet<String>();
         String email = ((TextView) findViewById(R.id.Email)).getText().toString();
@@ -57,9 +59,7 @@ public class UserInformation extends AppCompatActivity {
         editor.commit();
         RegresarAMain();
     }
-    public void RegresarAMain(){
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+    private void RegresarAMain(){
         this.finish();
     }
 }

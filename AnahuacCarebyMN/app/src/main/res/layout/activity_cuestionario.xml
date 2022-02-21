@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/CuestionarioBtn"
         android:layout_width="254dp"
         android:layout_height="76dp"
         android:layout_marginTop="28dp"

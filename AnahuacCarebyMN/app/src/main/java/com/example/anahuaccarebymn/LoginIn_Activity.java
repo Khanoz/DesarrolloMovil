@@ -2,6 +2,7 @@ package com.example.anahuaccarebymn;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class LoginIn_Activity extends AppCompatActivity {
@@ -20,6 +22,7 @@ public class LoginIn_Activity extends AppCompatActivity {
     Button entrar;
     Button cancelar;
     Button registrar;
+    Button reset;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,14 @@ public class LoginIn_Activity extends AppCompatActivity {
                 Registrar();
             }
         });
+        reset = (Button) findViewById(R.id.LoginResetBtn);
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                IrActivity(RecuperarContrasena.class);
+            }
+        });
+        loginError = (TextView) findViewById(R.id.LoginErrorTV);
     }
 
     private void InitElements(){
@@ -54,6 +65,7 @@ public class LoginIn_Activity extends AppCompatActivity {
         editor = preferences.edit();
     }
 
+    @SuppressLint("SetTextI18n")
     private void Login(){
         String email = ((TextView) findViewById(R.id.LoginEmail)).getText().toString();
         String password = ((TextView) findViewById(R.id.LoginPassword)).getText().toString();
@@ -62,17 +74,21 @@ public class LoginIn_Activity extends AppCompatActivity {
             loginError.setText("Error al inicio de sesion. Datos incorrectos.");
             return;
         }
-        if(datos.toArray()[0].toString() == email && datos.toArray()[1].toString() == password){
-            Log.d("Login: ", "Se inicio abre la nueva pantalla (todavia no existe)");
+        if(datos.contains(email) && datos.contains(password)){
+            IrActivity(Cuestionario.class);
         }
     }
     private void Cancelar(){
-        Intent activity = new Intent(this, MainActivity.class);
-        startActivity(activity);
+        IrActivity(MainActivity.class);
+        this.finish();
     }
 
     private void Registrar(){
-        Intent activity = new Intent(this, UserInformation.class);
-        startActivity(activity);
+        IrActivity(UserInformation.class);
+        this.finish();
+    }
+    private void IrActivity(Class<?> activity){
+        Intent intent = new Intent(this, activity);
+        startActivity(intent);
     }
 }
